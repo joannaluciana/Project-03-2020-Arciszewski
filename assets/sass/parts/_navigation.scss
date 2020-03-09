@@ -1,0 +1,135 @@
+.black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+
+
+    .main-bar {
+        // position: absolute;
+        top: 0;
+        // z-index: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+        // height: auto;
+        transition: .3s;
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0, 3 all;
+
+
+            .links {
+
+                text-align: center;
+                font-size: 16px;
+                margin: 20px 0 20px 0;
+                display: flex;
+                // justify-content: space-between;
+
+
+                li {
+                    display: inline-block;
+                    margin: 0 9px 0 0;
+                    padding: 0 9px 0 0;
+                    // position: relative;
+
+
+
+                    a {
+                        color: $primary-color;
+                        position: relative;
+                        padding: 20px 0;
+
+                        &:hover {
+                            color: #F9004D;
+
+                            &:after {
+                                width: 100%;
+                            }
+
+                        }
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            width: 0;
+                            height: 3px;
+                            background: #f9004d;
+                            transition: .3s;
+                            bottom: 0;
+                            z-index: 5;
+
+
+
+
+                        }
+
+
+
+                    }
+
+
+                }
+            }
+
+            .rigth {
+                padding: 3rem 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .shop {
+                    background-color: transparent;
+                    border-radius: 5px;
+
+                    padding: 0 25px;
+                    width: 150px;
+                    height: 5px;
+                    border: 2px solid hsla(0, 0%, 100%, .2);
+                    padding: 30px 0 40px 0;
+                    overflow: hidden;
+                    text-align: center;
+
+
+                    span {
+
+                        display: inline-block;
+                        color: $primary-color;
+
+                    }
+
+                }
+
+                .social {
+
+
+                    li {
+
+                        display: inline-flex;
+                        margin: 0 9px 0 0;
+                        padding: 0 9px 0 0;
+                        position: relative;
+
+
+                        a {
+
+
+                            font-size: 25px;
+                            color: $primary-color;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
