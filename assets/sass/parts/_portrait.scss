@@ -1,0 +1,149 @@
+.portrait {
+    background: #191919;
+    padding: 120px 0 0 120px;
+
+    .about-area {
+        display: block;
+
+
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            flex-wrap: wrap;
+            align-items: center;
+
+
+            .row {
+                margin-left: -25px;
+                margin-right: -25px;
+                display: flex;
+
+
+                .column1 {
+
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    // width: 60%;
+                    position: relative;
+
+                    display: inline;
+
+                    .inner-text {
+
+
+
+                        .title {
+                            h2 {
+                                margin-bottom: 8px;
+                                font-size: 60px;
+                                color: $primary-color;
+
+                            }
+
+                            p {
+                                color: rgba(198, 201, 216, .75);
+                            }
+                        }
+
+                    }
+
+                    .react {
+
+                        margin-right: -15px;
+                        margin-left: -15px;
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            li {
+                                display: inline;
+
+                                .menu1 {
+                                    color: $primary-color;
+                                    position: relative;
+                                    padding: 20px 0;
+
+                                    &:hover {
+                                        color: #F9004D;
+
+                                        &:after {
+                                            width: 100%;
+                                        }
+
+                                    }
+
+                                    &:after {
+                                        position: absolute;
+                                        content: "";
+                                        margin: 0 15px;
+                                        display: inline-block;
+                                        padding-bottom: 4px;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        cursor: pointer;
+                                        color: $primary-color;
+                                    }
+
+
+
+                                }
+                            }
+
+                        }
+
+
+
+
+
+
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
+                .column2 {
+                    display: inline;
+                    position: relative;
+                    // width: 40%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+
+                    .photo-frame {
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        z-index: 2;
+
+
+                        img {
+                            display: block;
+                            border-radius: 8px;
+                            width: 100%;
+
+
+                        }
+                    }
+
+
+
+
+                }
+
+
+            }
+
+        }
+    }
+}

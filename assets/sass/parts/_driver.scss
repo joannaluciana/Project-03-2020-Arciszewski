@@ -3,7 +3,7 @@
     position: relative;
     min-height: 100vh;
     background-color: #101010;
-    background-image: url("../img/Ethan2.jpg");
+    background-image: url("../img/Eth4.jpg");
     background-position: 50%;
     background-attachment: none;
     background-repeat: no-repeat;
@@ -86,6 +86,8 @@
                                 width: 75%;
                                 color: $primary-color;
                                 margin: 0 0 15px 0;
+                                color: $secondary-color;
+                                opacity: 0, 8;
 
                             }
                         }
