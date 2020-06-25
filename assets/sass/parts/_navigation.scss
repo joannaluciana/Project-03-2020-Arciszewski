@@ -4,6 +4,7 @@
     left: 0;
     z-index: 300;
     width: 100%;
+    background: #191919;
 
 
     .main-bar {
@@ -79,57 +80,106 @@
             }
 
             .rigth {
-                padding: 3rem 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                transition: 0, 3 all;
 
-                .shop {
-                    background-color: transparent;
-                    border-radius: 5px;
+                .column-button {
+                    position: relative;
 
-                    padding: 0 25px;
-                    width: 150px;
-                    height: 5px;
-                    border: 2px solid hsla(0, 0%, 100%, .2);
-                    padding: 30px 0 40px 0;
-                    overflow: hidden;
-                    text-align: center;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-left: auto;
+                    margin-right: auto;
 
 
-                    span {
 
+                    .gallery-button-dwn {
+
+
+                        text-align: center !important;
                         display: inline-block;
-                        color: $primary-color;
 
+
+
+
+
+                        .a-dwn {
+                            color: #fff;
+                            border: 2px solid hsla(0, 0%, 100%, .3);
+                            background-color: hsla(0, 0%, 0%, 0);
+                            padding: 15px 40px;
+                            height: 40px;
+                            line-height: 34px;
+                            border-radius: 4px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            position: relative;
+                            z-index: 100;
+                            color: $primary-color;
+                            letter-spacing: .2px;
+                            text-transform: uppercase;
+                            transition: .7s;
+
+
+
+
+                            &:hover {
+
+                                background-color: hsla(0, 0%, 0%, 0);
+                                top: -5px;
+
+                                background-color: #f9004d;
+                                border: 2px solid #f9004d;
+
+
+                            }
+
+                        }
                     }
 
-                }
+                    .social {
 
-                .social {
+                        text-align: center;
+                        font-size: 16px;
+                        margin: 20px 0 20px 0;
+                        display: flex;
 
-
-                    li {
-
-                        display: inline-flex;
-                        margin: 0 9px 0 0;
-                        padding: 0 9px 0 0;
-                        position: relative;
+                        li {
 
 
-                        a {
+
+                            display: inline-block;
+                            margin: 0 9px 0 0;
+                            padding: 0 9px 0 0;
 
 
-                            font-size: 25px;
-                            color: $primary-color;
-                            opacity: 0.8;
+
+
+                            a {
+
+
+                                font-size: 25px;
+                                color: $primary-color;
+                                opacity: 0.8;
+                                position: relative;
+
+                                i {
+                                    position: relative;
+                                }
+
+                                &:hover {
+                                    top: -5px;
+                                }
+
+                            }
                         }
                     }
                 }
             }
 
-
-
         }
+
     }
 }

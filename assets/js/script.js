@@ -12,9 +12,10 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("open");
   document.body.classList.toggle("menu-open");
 });
-let text_1 = document.querySelector(".gallery-txt");
-text_1.hover(function () {
-  this.removeClass("hover");
-});
+// let text_1 = document.querySelector(".gallery-txt");
+
+// text_1.hover(function () {
+//   text_1.removeClass("hover");
+// });
 
 AOS.init();
